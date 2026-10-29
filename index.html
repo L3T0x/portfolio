@@ -1,232 +1,115 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Portfolio of Afif Jazimin bin Saiful Zaidi, a cybersecurity graduate focused on VAPT, GRC, technology risk, and security consulting." />
-    <meta name="theme-color" content="#fbfaf6" />
-    <meta property="og:title" content="Afif Jazimin | Cybersecurity Portfolio" />
-    <meta property="og:description" content="Cybersecurity, VAPT, GRC, technology risk, and security consulting portfolio." />
-    <meta property="og:type" content="website" />
-    <title>Afif Jazimin | Cybersecurity Portfolio</title>
-    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Afif Jazimin's cybersecurity portfolio. Explore projects, CTF writeups, skills, experience, and contact details." />
+  <meta name="theme-color" content="#f8f3e8" />
+  <meta property="og:title" content="Afif Jazimin | The Risk Desk" />
+  <meta property="og:description" content="Unmanaged risk is unmanaged reality. Explore cybersecurity projects, writeups, and experience." />
+  <meta property="og:type" content="website" />
+  <title>The Risk Desk | Afif Jazimin</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body class="home-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header desk-header">
+    <a class="wordmark" href="index.html" aria-label="Afif Jazimin, home">AFIF JAZIMIN<span class="wordmark-star" aria-hidden="true">✳</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle><span></span><span></span><span class="sr-only">Toggle navigation</span></button>
+    <nav class="site-nav" id="site-nav" aria-label="Primary navigation" data-nav>
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="writeups.html">Writeups</a>
+      <a href="experience.html">Experience</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-    <header class="site-header">
-      <a class="wordmark" href="#top" aria-label="Afif Jazimin, home">AFIF JAZIMIN</a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>
-        <span></span><span></span><span class="sr-only">Toggle navigation</span>
-      </button>
-      <nav class="site-nav" id="site-nav" aria-label="Primary navigation" data-nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
-
-    <main id="main">
-      <section class="hero paper-dots" id="top" aria-labelledby="hero-title">
-        <div class="hero-frame reveal">
-          <div class="hero-copy">
-            <p class="scribble-label">Hello! I work in</p>
-            <h1 id="hero-title">CYBERSECURITY<br />VAPT <span>&amp;</span> GRC</h1>
-            <p class="hero-intro">Testing systems, collecting evidence, and translating security findings into clear remediation.</p>
-            <div class="hero-actions">
-              <a class="comic-button button-fill" href="#projects">View projects</a>
-              <a class="comic-button" href="mailto:afif.saifulzaidi@gmail.com?subject=Cybersecurity%20opportunity">Contact me</a>
-            </div>
-            <ul class="slant-tags" aria-label="Career focus">
-              <li>Web &amp; API</li><li>Technology risk</li><li>Security advisory</li>
-            </ul>
+  <main id="main" class="desk-main paper-dots">
+    <div class="desk-shell">
+      <div class="desk-topline"><span>AFIF'S FIELD DESK / 001</span><span class="desk-topline-right"><i aria-hidden="true"></i> OPEN FOR OPPORTUNITIES</span></div>
+      <section class="desk-stage" aria-labelledby="desk-title">
+        <div class="desk-copy">
+          <p class="desk-eyebrow">A HAND-DRAWN GUIDE TO MY WORK <span aria-hidden="true">↘</span></p>
+          <h1 id="desk-title">UNMANAGED<br><em>RISK</em> IS<br>UNMANAGED<br><span>REALITY.</span></h1>
+          <p class="desk-intro">Hi, I'm Afif Jazimin. I work across cybersecurity testing, GRC, and technology risk. Pick a file below to explore my work.</p>
+          <div class="desk-cta">
+            <a class="comic-button button-fill" href="projects.html">Open the projects file <span aria-hidden="true">↗</span></a>
+            <a class="desk-text-link" href="about.html">Meet the person behind the desk →</a>
           </div>
+          <div class="desk-scribble" aria-hidden="true">look closer! <svg viewBox="0 0 140 45"><path d="M3 7c23 27 65 30 116 17m-15-13 16 13-16 16" /></svg></div>
+        </div>
 
-          <div class="hero-art" role="img" aria-label="Hand-drawn cybersecurity workstation with a laptop, shield, lock, network nodes, and code symbols">
-            <svg viewBox="0 0 620 520" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path class="doodle faint" d="M67 76c62-61 151-57 190-9M410 54c49 10 87 42 104 85M530 327c-8 71-48 116-102 140M160 464c-64-7-105-42-124-94"/>
-              <path class="doodle red" d="m71 149 22-17 18 21 22-20M492 198l20-16 15 18 23-15"/>
-              <g class="float-icon icon-bug">
-                <ellipse cx="104" cy="249" rx="28" ry="34" class="fill-white"/>
-                <path class="doodle" d="M81 249h46M104 215v68M77 230l-22-12M78 268l-22 13M131 230l22-12M130 268l23 13M94 213l-9-17M114 213l10-17"/>
+        <div class="desk-illustration" aria-label="Illustrated risk desk with an animated radar screen, clipboard, pencil, and warning note" role="img">
+          <span class="art-label art-label-top">RISK DESK</span>
+          <div class="desk-art-board">
+            <svg class="desk-svg" viewBox="0 0 570 555" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path class="art-squiggle" d="M48 146c-24 17-23 49 2 62M452 52c28-12 54-8 69 16M452 459c30 11 50 33 53 64" />
+              <g class="art-spark spark-a"><path d="M88 69v37M70 88h36M77 76l22 23M99 76 77 99"/></g>
+              <g class="art-spark spark-b"><path d="M476 227v35M460 244h32M466 232l20 22M486 232l-20 22"/></g>
+              <g class="art-paper">
+                <path d="M316 82 471 91 455 335 297 320Z" fill="#fffdf5" stroke="#20201e" stroke-width="6" stroke-linejoin="round"/>
+                <path d="M344 117h95M342 147h85M338 177h82M333 209h80" stroke="#20201e" stroke-width="5" stroke-linecap="round"/>
+                <path d="m336 254 16 16 31-37" stroke="#e84b4f" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="418" cy="266" r="22" fill="#ffd34e" stroke="#20201e" stroke-width="5"/>
+                <path d="M418 251v18m0 7v2" stroke="#20201e" stroke-width="5" stroke-linecap="round"/>
               </g>
-              <g class="float-icon icon-code">
-                <path class="doodle blue" d="m479 115-25 22 25 22M527 115l25 22-25 22M515 100l-23 76"/>
+              <g class="art-monitor">
+                <path d="M80 156 365 139l18 270-296 13Z" fill="#e9f1ed" stroke="#20201e" stroke-width="8" stroke-linejoin="round"/>
+                <path d="M105 180 344 167l13 203-247 12Z" fill="#fffdf6" stroke="#20201e" stroke-width="6" stroke-linejoin="round"/>
+                <path d="M139 419 326 411l-9 36-170 8Z" fill="#e9f1ed" stroke="#20201e" stroke-width="7" stroke-linejoin="round"/>
+                <path d="m113 457 244-12 23 34-294 14Z" fill="#fffdf6" stroke="#20201e" stroke-width="7" stroke-linejoin="round"/>
+                <path d="m175 465 105-6" stroke="#20201e" stroke-width="6" stroke-linecap="round"/>
               </g>
-              <g class="network">
-                <path class="doodle faint" d="M134 112 213 160 174 220M444 231l76 57-52 68M171 397l75-49"/>
-                <circle cx="134" cy="112" r="8" class="fill-red"/><circle cx="213" cy="160" r="8" class="fill-blue"/><circle cx="174" cy="220" r="8" class="fill-black"/>
-                <circle cx="444" cy="231" r="8" class="fill-red"/><circle cx="520" cy="288" r="8" class="fill-black"/><circle cx="468" cy="356" r="8" class="fill-blue"/>
+              <path class="art-underline" d="M86 511c85 11 208 9 317-18"/>
+              <g class="art-pencil">
+                <path d="m437 344 28 8-36 132-30 25-9-38Z" fill="#ffd34e" stroke="#20201e" stroke-width="6" stroke-linejoin="round"/>
+                <path d="m390 471 39 13-30 25Z" fill="#f2bd9d" stroke="#20201e" stroke-width="6" stroke-linejoin="round"/>
+                <path d="m444 344 25 8-6 22-27-8Z" fill="#e84b4f" stroke="#20201e" stroke-width="6"/>
               </g>
-              <g class="laptop">
-                <path class="fill-white outline" d="M170 190h280l-25 187H196Z"/>
-                <path class="fill-blue outline" d="M191 210h237l-20 144H211Z"/>
-                <path class="fill-white outline" d="M135 377h355l-30 48H166Z"/>
-                <path class="doodle" d="M135 377h355M166 425h294"/>
-                <path class="doodle white-line" d="m248 269-20 20 20 20M372 269l20 20-20 20M337 244l-49 91"/>
-              </g>
-              <g class="shield">
-                <path class="fill-red outline" d="M309 92c49 31 89 25 89 25 3 87-23 134-89 167-66-33-92-80-89-167 0 0 40 6 89-25Z"/>
-                <path class="fill-white outline" d="M309 139c24 0 44 19 44 43v18h10v53H255v-53h10v-18c0-24 20-43 44-43Z"/>
-                <path class="doodle" d="M283 200v-18a26 26 0 0 1 52 0v18M309 218v18"/>
-              </g>
-              <path class="doodle red accent-line" d="M150 444c112 22 226 21 340-2"/>
-              <text x="72" y="346" class="svg-note">SCAN</text>
-              <text x="463" y="405" class="svg-note">SECURE!</text>
+              <path d="M49 395c-22 9-25 29-8 42m4-32c-18 15-10 30 7 31" stroke="#20201e" stroke-width="5" stroke-linecap="round" fill="none"/>
+              <path d="m486 378 23-11m-21 30 35 1m-34 19 27 17" stroke="#20201e" stroke-width="5" stroke-linecap="round"/>
             </svg>
-            <span class="tape tape-one"></span><span class="tape tape-two"></span>
+            <div class="monitor-content" aria-hidden="true">
+              <div class="monitor-bar"><span>LIVE / RISK SIGNAL</span><span>×</span></div>
+              <img class="radar-gif" src="assets/risk-radar.gif" data-static-src="assets/risk-radar-still.png" alt="" width="132" height="132" />
+              <span class="monitor-message" data-lens-message>FIND THE SIGNAL.</span>
+              <span class="monitor-micro">IDENTIFY → ASSESS → RESPOND</span>
+            </div>
           </div>
+          <span class="art-sticker sticker-one">EVIDENCE<br>FIRST!</span>
+          <span class="art-sticker sticker-two">✳</span>
+          <span class="art-caption">A little motion, a lot of questions.</span>
         </div>
       </section>
 
-      <section class="about section-space" id="about" aria-labelledby="about-title">
-        <div class="about-card comic-panel reveal">
-          <p class="section-kicker">01 — About me</p>
-          <h2 id="about-title">A SECURITY GRADUATE WHO LIKES FINDINGS TO BE USEFUL.</h2>
-          <p>Cybersecurity graduate with a CGPA of 3.60/4.00 and Security Consultant internship experience supporting web, API, network, and infrastructure assessments.</p>
-          <p>My practical work combines reconnaissance, manual testing, evidence collection, risk-impact reporting, remediation recommendations, and clear client communication.</p>
-          <a class="comic-button button-fill" href="#experience">See experience</a>
-          <span class="doodle-arrow" aria-hidden="true">↘</span>
+      <section class="desk-control" aria-label="Interactive risk desk">
+        <div class="control-heading"><span class="section-kicker">TRY THE DESK</span><strong>Turn a question into a next step.</strong></div>
+        <div class="lens-buttons" role="group" aria-label="Risk desk modes">
+          <button type="button" class="lens-button is-selected" data-lens="identify" aria-pressed="true"><span>01</span> Identify</button>
+          <button type="button" class="lens-button" data-lens="assess" aria-pressed="false"><span>02</span> Assess</button>
+          <button type="button" class="lens-button" data-lens="respond" aria-pressed="false"><span>03</span> Respond</button>
         </div>
-
-        <div class="stat-stack reveal" aria-label="Career highlights">
-          <article class="comic-panel"><strong>3.60</strong><span>CGPA / 4.00</span></article>
-          <article class="comic-panel"><strong>FIRST CLASS</strong><span>Honours</span></article>
-          <article class="comic-panel"><strong>1ST PLACE</strong><span>System Override CTF · 2025</span></article>
-        </div>
+        <p class="lens-description" data-lens-description aria-live="polite">What needs attention? Start with the signal and collect the evidence.</p>
       </section>
 
-      <section class="skills section-space paper-dots" id="skills" aria-labelledby="skills-title">
-        <div class="center-heading reveal">
-          <p class="section-kicker">02 — Skills &amp; tools</p>
-          <h2 id="skills-title">PRACTICAL SECURITY TOOLKIT</h2>
-          <p>No made-up percentages — only résumé-listed tools and hands-on areas.</p>
-        </div>
-        <div class="skill-grid">
-          <article class="skill-card comic-panel reveal">
-            <div class="skill-doodle" aria-hidden="true">&lt;/&gt;</div>
-            <h3>Web &amp; Network</h3>
-            <div class="skill-tags"><span>Burp Suite</span><span>OWASP ZAP</span><span>Acunetix</span><span>Nmap</span><span>Nessus</span><span>Metasploit</span><span>Wireshark</span></div>
-          </article>
-          <article class="skill-card comic-panel reveal">
-            <div class="skill-doodle" aria-hidden="true">AD</div>
-            <h3>Active Directory &amp; RE</h3>
-            <div class="skill-tags"><span>Rubeus</span><span>Impacket</span><span>Kerbrute</span><span>Mimikatz</span><span>Ghidra</span><span>IDA</span><span>x86 Assembly</span></div>
-          </article>
-          <article class="skill-card comic-panel reveal">
-            <div class="skill-doodle" aria-hidden="true">#!</div>
-            <h3>Scripting &amp; Reporting</h3>
-            <div class="skill-tags"><span>Python</span><span>Bash</span><span>PowerShell</span><span>C/C++</span><span>JavaScript</span><span>MITRE ATT&amp;CK</span><span>Risk impact</span></div>
-          </article>
+      <section class="desk-menu" aria-labelledby="menu-heading">
+        <div class="menu-heading"><div><p class="section-kicker">CHOOSE A FILE</p><h2 id="menu-heading">WHAT WOULD YOU LIKE TO EXPLORE?</h2></div><span aria-hidden="true">↙</span></div>
+        <div class="file-grid">
+          <a class="file-card file-about" href="about.html"><span class="file-index">01 / PERSON</span><span class="file-symbol" aria-hidden="true">☺</span><strong>About me</strong><span class="file-arrow" aria-hidden="true">↗</span></a>
+          <a class="file-card file-projects" href="projects.html"><span class="file-index">02 / BUILDS</span><span class="file-symbol" aria-hidden="true">⌘</span><strong>Projects</strong><span class="file-arrow" aria-hidden="true">↗</span></a>
+          <a class="file-card file-writeups" href="writeups.html"><span class="file-index">03 / NOTES</span><span class="file-symbol" aria-hidden="true">✎</span><strong>Writeups</strong><span class="file-arrow" aria-hidden="true">↗</span></a>
+          <a class="file-card file-skills" href="skills.html"><span class="file-index">04 / TOOLKIT</span><span class="file-symbol" aria-hidden="true">✳</span><strong>Skills</strong><span class="file-arrow" aria-hidden="true">↗</span></a>
+          <a class="file-card file-experience" href="experience.html"><span class="file-index">05 / FIELD NOTES</span><span class="file-symbol" aria-hidden="true">☷</span><strong>Experience</strong><span class="file-arrow" aria-hidden="true">↗</span></a>
+          <a class="file-card file-contact" href="contact.html"><span class="file-index">06 / HELLO</span><span class="file-symbol" aria-hidden="true">@</span><strong>Contact</strong><span class="file-arrow" aria-hidden="true">↗</span></a>
         </div>
       </section>
-
-      <section class="projects section-space" id="projects" aria-labelledby="projects-title">
-        <div class="center-heading reveal">
-          <p class="section-kicker">03 — Featured projects</p>
-          <h2 id="projects-title">THINGS I BUILT &amp; TESTED</h2>
-          <p>Academic, lab, and hackathon work from my current résumé.</p>
-        </div>
-        <div class="project-grid">
-          <article class="project-card comic-panel reveal">
-            <div class="project-sketch sketch-stego" aria-hidden="true"><span>PNG</span><i>+</i><span>AES</span></div>
-            <div class="project-body"><span class="project-no">01 / FINAL YEAR PROJECT</span><h3>Secure Adaptive Image Steganography Toolkit</h3><p>Python toolkit using adaptive PNG LSB-Matching, JPEG DCT-domain techniques, Argon2id, and AES-GCM.</p><div class="mini-tags"><span>PSNR</span><span>SSIM</span><span>ROC/AUC</span></div></div>
-          </article>
-          <article class="project-card comic-panel reveal">
-            <div class="project-sketch sketch-ad" aria-hidden="true"><span>DC</span><b>···</b><span>WIN</span></div>
-            <div class="project-body"><span class="project-no">02 / SECURITY LAB</span><h3>Active Directory Security Lab</h3><p>Windows Server 2022 and Windows 10 environment for controlled offensive and defensive simulation.</p><div class="mini-tags"><span>Kerberoasting</span><span>AS-REP</span><span>Pass-the-hash</span></div></div>
-          </article>
-          <article class="project-card comic-panel reveal">
-            <div class="project-sketch sketch-pet" aria-hidden="true"><span class="pet-face">•ᴗ•</span><i>?</i></div>
-            <div class="project-body"><span class="project-no">03 / PAYHACK 2024</span><h3>AstoPet</h3><p>AI cybersecurity companion with phishing scanning, a virtual pet, gamified quizzes, and a dashboard.</p><a class="ink-link" href="https://github.com/L3T0x/AstoPet-PayHack2024" target="_blank" rel="noreferrer">View repository ↗</a></div>
-          </article>
-          <article class="project-card comic-panel reveal">
-            <div class="project-sketch sketch-arlo" aria-hidden="true"><span>AI</span><i>⇄</i><span>P2P</span></div>
-            <div class="project-body"><span class="project-no">04 / DERIV 2025</span><h3>ARLO</h3><p>AI-assisted peer-to-peer dispute-resolution concept using Llama 3 and Hugging Face analysis.</p><div class="mini-tags"><span>Sentiment</span><span>Emotion</span><span>Behaviour</span></div></div>
-          </article>
-        </div>
-      </section>
-
-      <section class="experience section-space paper-dots" id="experience" aria-labelledby="experience-title">
-        <div class="center-heading reveal">
-          <p class="section-kicker">04 — Experience &amp; results</p>
-          <h2 id="experience-title">FIELD NOTES</h2>
-        </div>
-        <div class="field-grid">
-          <article class="experience-card comic-panel reveal">
-            <div class="experience-top"><span>JUL 2025 — NOV 2025</span><span>SEC / 001</span></div>
-            <h3>Security Consultant Intern</h3>
-            <h4>Across Verticals Sdn Bhd</h4>
-            <ul>
-              <li>Supported web application, API, network, and infrastructure security assessments.</li>
-              <li>Documented findings with risk impact, proof-of-concept evidence, and remediation recommendations.</li>
-              <li>Combined technical testing with clear risk communication in a client-facing environment.</li>
-            </ul>
-            <div class="stamp" aria-hidden="true">EVIDENCE<br />BACKED</div>
-          </article>
-          <div class="result-stack reveal">
-            <article class="comic-panel"><span>2026</span><strong>3RD PLACE</strong><p>Operation 0xCYNX CTF</p></article>
-            <article class="comic-panel"><span>2026</span><strong>5TH PLACE</strong><p>UTAR-FICT Intervarsity CTF</p></article>
-            <article class="comic-panel"><span>2025</span><strong>TOP 6</strong><p>SiberSiaga CTF</p></article>
-            <a class="comic-button button-fill" href="https://github.com/L3T0x/writeups" target="_blank" rel="noreferrer">CTF write-ups ↗</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="credentials section-space" aria-labelledby="credentials-title">
-        <div class="center-heading reveal">
-          <p class="section-kicker">05 — Education &amp; credentials</p>
-          <h2 id="credentials-title">THE PAPER TRAIL</h2>
-        </div>
-        <div class="credential-grid">
-          <article class="credential-card comic-panel reveal">
-            <span class="corner-note">EDUCATION</span>
-            <h3>Asia Pacific University of Technology and Innovation</h3>
-            <p>BSc (Hons) in Computer Science (Cyber Security)</p>
-            <strong>CGPA 3.60 / 4.00 · First Class Honours</strong>
-            <hr />
-            <h3>Kolej MARA Kuala Nerang</h3>
-            <p>Foundation in Engineering and Technology</p>
-            <strong>CGPA 4.00 / 4.00 · MUET Band 4.5</strong>
-          </article>
-          <article class="credential-card comic-panel reveal">
-            <span class="corner-note">CREDENTIALS</span>
-            <ul class="credential-list">
-              <li><b>AWS</b> Certified Cloud Practitioner</li>
-              <li><b>AWS</b> re/Start Graduate · Aug 2025</li>
-              <li><b>Cisco</b> CCNA: Switching, Routing, and Wireless Essentials · Jan 2025</li>
-              <li><b>Cisco</b> CCNA: Introduction to Networks · Mar 2024</li>
-              <li><b>IBM</b> Enterprise Security in Practice · Mar 2025</li>
-              <li><b>IBM</b> Security Operations Center in Practice · Mar 2025</li>
-              <li><b>Red Hat</b> System Administration I</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <section class="contact paper-dots" id="contact" aria-labelledby="contact-title">
-        <div class="contact-card comic-panel reveal">
-          <div class="contact-doodle" aria-hidden="true">@</div>
-          <p class="section-kicker">06 — Let's connect</p>
-          <h2 id="contact-title">OPEN TO CYBERSECURITY OPPORTUNITIES.</h2>
-          <p>VAPT · GRC · Technology risk · Cyber risk · Security advisory</p>
-          <a class="big-email" href="mailto:afif.saifulzaidi@gmail.com?subject=Cybersecurity%20opportunity">afif.saifulzaidi@gmail.com ↗</a>
-          <div class="social-links">
-            <a href="https://www.linkedin.com/in/afif-jazimin-saiful-60a30a30b/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-            <a href="https://github.com/L3T0x" target="_blank" rel="noreferrer">GitHub ↗</a>
-            <span>Shah Alam, Malaysia</span>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <p>© <span data-year>2026</span> Afif Jazimin bin Saiful Zaidi</p>
-      <a href="#top">Back to top ↑</a>
-    </footer>
-  </body>
+      <div class="desk-bottomline"><span>MAKE THE INVISIBLE VISIBLE.</span><span>SHAH ALAM, MALAYSIA / CYBERSECURITY</span></div>
+    </div>
+  </main>
+  <footer class="site-footer"><p>© <span data-year>2026</span> Afif Jazimin bin Saiful Zaidi</p><a href="https://github.com/L3T0x" target="_blank" rel="noreferrer">GitHub ↗</a></footer>
+</body>
 </html>

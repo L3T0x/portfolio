@@ -1,4 +1,4 @@
-# Afif Jazimin - Cybersecurity Portfolio
+# Afif Jazimin — The Risk Desk
 
 A static, responsive portfolio built for GitHub Pages. The site is intentionally framework-free so it can deploy without a Node.js build or Vercel.
 
@@ -18,10 +18,12 @@ Push to `master`. The workflow in `.github/workflows/pages.yml` uploads the stat
 
 If this is the first Pages deployment for the repository, open **Settings → Pages** on GitHub and set the source to **GitHub Actions**.
 
-## Content updates
+## Pages and content
 
-- Main content: `index.html`
+- Interactive main menu: `index.html`
+- Separate content pages: `about.html`, `projects.html`, `writeups.html`, `skills.html`, `experience.html`, `contact.html`
 - Visual system and responsive layout: `styles.css`
-- Navigation and reveal interactions: `script.js`
+- Navigation, reveal, and risk-desk interactions: `script.js`
+- Original looping radar GIF: `assets/risk-radar.gif` (regenerate with `python assets/generate_radar.py`; requires Pillow)
 
-The initial copy is based on the supplied résumé versions. Project evidence, screenshots, and a portrait can be added without changing the overall layout.
+The initial copy is based on the supplied résumé versions. Edit the corresponding HTML page to change content. Project evidence, screenshots, and a portrait can be added later.

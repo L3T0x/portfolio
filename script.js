@@ -21,6 +21,11 @@ document.querySelectorAll("[data-year]").forEach((node) => {
 });
 
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+if (reducedMotion) {
+  document.querySelectorAll("img[data-static-src]").forEach((image) => {
+    image.src = image.dataset.staticSrc;
+  });
+}
 const revealItems = document.querySelectorAll(".reveal");
 
 if (reducedMotion || !("IntersectionObserver" in window)) {
@@ -48,4 +53,38 @@ if (!reducedMotion && window.matchMedia("(pointer: fine)").matches) {
     },
     { passive: true }
   );
+}
+
+const lensCopy = {
+  identify: {
+    message: "FIND THE SIGNAL.",
+    description: "What needs attention? Start with the signal and collect the evidence."
+  },
+  assess: {
+    message: "WEIGH THE RISK.",
+    description: "What could happen, and how serious is it? Put the finding into context."
+  },
+  respond: {
+    message: "MAKE A MOVE.",
+    description: "What is the next useful action? Turn the finding into a clear response."
+  }
+};
+
+const lensButtons = document.querySelectorAll("[data-lens]");
+const lensMessage = document.querySelector("[data-lens-message]");
+const lensDescription = document.querySelector("[data-lens-description]");
+if (lensButtons.length && lensMessage && lensDescription) {
+  lensButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const lens = lensCopy[button.dataset.lens];
+      if (!lens) return;
+      lensButtons.forEach((item) => {
+        const selected = item === button;
+        item.classList.toggle("is-selected", selected);
+        item.setAttribute("aria-pressed", String(selected));
+      });
+      lensMessage.textContent = lens.message;
+      lensDescription.textContent = lens.description;
+    });
+  });
 }
