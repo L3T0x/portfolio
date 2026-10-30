@@ -1,29 +1,18 @@
-# Afif Jazimin — The Risk Desk
+# Afif Jazimin — cybersecurity portfolio
 
-A static, responsive portfolio built for GitHub Pages. The site is intentionally framework-free so it can deploy without a Node.js build or Vercel.
+A small static site at [l3t0x.github.io/portfolio](https://l3t0x.github.io/portfolio/).
+It uses plain HTML, CSS, and JavaScript, with no build step.
 
-## Preview locally
+## Pages
 
-From the repository root, run any static server. For example:
+- `index.html` — introduction and direct links
+- `projects.html` — selected projects
+- `writeups.html` — CTF recaps and notes
+- `experience.html` — work and competition highlights
+- `about.html`, `skills.html`, `contact.html` — short supporting pages
 
-```powershell
-python -m http.server 4173
-```
+Edit the HTML page for its content, `styles.css` for layout, and `script.js`
+for the mobile menu. The small radar GIF is an original asset in `assets/`.
 
-Then open `http://localhost:4173`.
-
-## Deploy
-
-Push to `master`. The workflow in `.github/workflows/pages.yml` uploads the static files and deploys them through GitHub Pages.
-
-If this is the first Pages deployment for the repository, open **Settings → Pages** on GitHub and set the source to **GitHub Actions**.
-
-## Pages and content
-
-- Interactive main menu: `index.html`
-- Separate content pages: `about.html`, `projects.html`, `writeups.html`, `skills.html`, `experience.html`, `contact.html`
-- Visual system and responsive layout: `styles.css`
-- Navigation, reveal, and risk-desk interactions: `script.js`
-- Original looping radar GIF: `assets/risk-radar.gif` (regenerate with `python assets/generate_radar.py`; requires Pillow)
-
-The initial copy is based on the supplied résumé versions. Edit the corresponding HTML page to change content. Project evidence, screenshots, and a portrait can be added later.
+Push to `master` to deploy through the GitHub Pages workflow in
+`.github/workflows/pages.yml`.
